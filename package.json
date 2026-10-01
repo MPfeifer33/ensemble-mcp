@@ -2,7 +2,7 @@
   "name": "@hearthbyte/ensemble-mcp",
   "version": "1.0.0",
   "description": "MCP server for Ensemble - AI-ready design toolkit. Generate color palettes, typography, spacing, shadows, and complete design systems.",
-  "mcpName": "io.hearthbyte/ensemble",
+  "mcpName": "dev.hearthbyte/ensemble",
   "type": "module",
   "main": "dist/index.js",
   "bin": {

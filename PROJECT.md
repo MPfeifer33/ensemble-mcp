@@ -20,4 +20,4 @@ entry), `smithery.yaml` (Smithery entry), `package.json` (`@hearthbyte/ensemble-
 
 **Open before publishing to registries:** the npm scope `@hearthbyte` must be owned by the
 publisher; the registry name in `server.json` / `mcpName` must be a namespace that can be proven
-(`dev.hearthbyte/ensemble` by DNS, or `io.github.mpfeifer33/ensemble` by GitHub login).
+(decided 2026-10-01: `dev.hearthbyte/ensemble`, proven by one DNS TXT record on hearthbyte.dev).

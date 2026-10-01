@@ -1,6 +1,6 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.hearthbyte/ensemble",
+  "name": "dev.hearthbyte/ensemble",
   "displayName": "Ensemble",
   "description": "AI-ready design toolkit with 10 tools for colors, typography, spacing, shadows, and accessibility. Generate complete design systems programmatically.",
   "version": "1.0.0",
