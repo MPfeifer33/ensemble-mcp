@@ -24,8 +24,24 @@ Ensemble MCP is a [Model Context Protocol](https://modelcontextprotocol.io/) ser
 
 **10 tools. One API. Infinite possibilities.**
 
-| Tool | What it does |
-|------|--------------|
+| Tool | What it does | Its main argument |
+|------|--------------|-------------------|
+| `harmony_generate_palette` | A full color system from one brand color | `color_scheme` |
+| `duet_pair_fonts` | Heading, body and mono fonts with a type scale | `type_style` |
+| `tempo_generate_scale` | A spacing system tuned to the type | `density` |
+| `chord_generate_shadows` | Elevation shadows tinted by the palette | `shadow_intensity` |
+| `cadence_generate_grid` | Responsive grid: breakpoints, columns, gutters | `density` |
+| `riff_generate_motion` | Durations, easing curves and transition presets | `animation_style` |
+| `bridge_generate_theme` | A complete dark mode from the light system | `color` |
+| `pitch_audit_contrast` | Which palette pairs pass WCAG, and what to fix | `color` |
+| `compose_export` | The whole system as CSS, JSON, Tailwind or SCSS | `formats` |
+| `a11y_validate` | Check one color pair for accessibility (FREE, no key needed) | `foreground`, `background` |
+
+Every builder takes a brand `color` and an optional `preferences` object, so tools called
+separately agree with each other. Results are deterministic: the same color and preferences
+always give the same system.
+
+------|--------------|
 | `harmony_generate_palette` | Generate harmonious color palettes from a single color |
 | `duet_pair_fonts` | Pair heading and body fonts that complement each other |
 | `tempo_generate_scale` | Create type scales and spacing systems |
@@ -86,21 +102,21 @@ ensemble-mcp
 
 Once installed, try these with your AI:
 
-> "Generate a color palette based on #6366F1 using triadic harmony"
+> "Generate a triadic color palette from #6366F1"
 
-> "Create a type scale with base 16px and golden ratio, with fluid clamp() values"
+> "Give me a classical font pairing and an airy spacing system to go with it"
 
 > "Check if #FFFFFF text on #6366F1 background is accessible"
 
-> "Export my design system as Tailwind config"
+> "Build a design system from #0F766E with dramatic shadows and export it as Tailwind config"
 
-> "Set up a dashboard grid layout with 24px gaps"
+> "Audit the contrast of the palette you just made and tell me what fails"
 
 ---
 
 ## API Key
 
-Most tools require a Pro subscription ($4.99/month, or $39/year).
+The builders call the Ensemble API, which needs a Pro key ($4.99/month, or $39/year).
 
 **Free tool:** `a11y_validate` - accessibility validation with no API key required.
 
@@ -114,7 +130,7 @@ Ensemble tools are built on these principles:
 
 1. **One color in, design system out** - Start with a single value, get a complete system
 2. **Cross-tool sync** - Colors flow to typography, typography informs spacing
-3. **Export everywhere** - CSS, Tailwind, SCSS, JSON, Figma Tokens
+3. **Export everywhere** - CSS, Tailwind, SCSS, JSON
 4. **Accessibility first** - WCAG 2.1 + APCA checking built in
 
 ---
