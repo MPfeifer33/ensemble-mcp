@@ -1,0 +1,43 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.hearthbyte/ensemble",
+  "displayName": "Ensemble",
+  "description": "AI-ready design toolkit with 10 tools for colors, typography, spacing, shadows, and accessibility. Generate complete design systems programmatically.",
+  "version": "1.0.0",
+  "homepage": "https://hearthbyte.dev/ensemble/",
+  "repository": "https://github.com/MPfeifer33/ensemble-mcp",
+  "license": "MIT",
+  "author": {
+    "name": "HearthByte",
+    "email": "support@hearthbyte.dev",
+    "url": "https://hearthbyte.dev"
+  },
+  "categories": ["design", "developer-tools", "productivity"],
+  "icons": {
+    "svg": "https://hearthbyte.dev/images/logo.svg",
+    "png": "https://hearthbyte.dev/images/logo.png"
+  },
+  "package": {
+    "registry": "npm",
+    "name": "@hearthbyte/ensemble-mcp"
+  },
+  "runtime": {
+    "type": "node",
+    "minVersion": "18"
+  },
+  "config": {
+    "type": "object",
+    "properties": {
+      "ENSEMBLE_API_KEY": {
+        "type": "string",
+        "description": "Ensemble Pro API key",
+        "secret": true
+      }
+    }
+  },
+  "capabilities": {
+    "tools": true,
+    "resources": false,
+    "prompts": false
+  }
+}

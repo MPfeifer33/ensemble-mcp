@@ -1,0 +1,21 @@
+# Smithery Configuration
+# https://smithery.ai/docs/build/publish
+
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    properties:
+      ENSEMBLE_API_KEY:
+        type: string
+        description: "Your Ensemble Pro API key (get one at hearthbyte.dev/ensemble/pricing)"
+        x-from: env
+    required: []
+  commandFunction: |-
+    (config) => ({
+      command: 'npx',
+      args: ['-y', '@hearthbyte/ensemble-mcp'],
+      env: {
+        ENSEMBLE_API_KEY: config.ENSEMBLE_API_KEY || ''
+      }
+    })

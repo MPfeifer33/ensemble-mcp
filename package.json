@@ -1,0 +1,49 @@
+{
+  "name": "@hearthbyte/ensemble-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for Ensemble - AI-ready design toolkit. Generate color palettes, typography, spacing, shadows, and complete design systems.",
+  "mcpName": "io.hearthbyte/ensemble",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "ensemble-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "design-system",
+    "color-palette",
+    "typography",
+    "tailwind",
+    "css",
+    "ai-tools",
+    "ensemble",
+    "hearthbyte"
+  ],
+  "author": "HearthByte <support@hearthbyte.dev>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MPfeifer33/ensemble-mcp"
+  },
+  "homepage": "https://hearthbyte.dev/ensemble/",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
